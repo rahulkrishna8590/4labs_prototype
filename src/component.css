@@ -1,0 +1,132 @@
+.siteHeader {
+  padding-left: 10px;
+}
+.headerText{
+text-align: left;
+}
+
+.dashOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  padding: 10px;
+  background-color: #484e53;
+  border-radius: 15px;
+}
+
+.appBar {
+  background: #343a40 !important;
+  color: #dcdfe0 !important;
+}
+
+.userDetails {
+  font-size: 12px;
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+}
+.toolbarContainer {
+  margin-top: 80px !important;
+  height: 20vh !important;
+  align-items: center;
+}
+.optionHeader {
+  font-size: 28px;
+  font-weight: bold;
+  color: #024102;
+}
+.searchInput {
+  min-width: 300px !important;
+  width: 15vw;
+}
+.filterButton {
+  background-color: #6C757D !important;
+  border-radius: 17px !important;
+}
+.paymentButton {
+  border-radius: 17px !important;
+  /* background-color:red !important; */
+}
+.notificationDataLabel {
+  background: #343a40 !important;
+  height: 45px;
+  border-left: 14px solid #ffd145;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  color: #dcdfe0 !important;
+  font-weight: bold;
+}
+.labelText1 {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+.close {
+  border-left: 1px solid grey;
+  padding-left: 2px;
+}
+.toolbarSubContainerTop {
+  height: 15vh;
+  padding-top: 5vh;
+}
+.centerItems{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:25px;
+}
+.listHeader{
+    background:white;
+    height:45px;
+    border-radius:10px;
+    /* margin-top:15px; */
+}
+.headerLabelText{
+    margin-top:9px !important;
+}
+.listDatas{
+  background:white;
+  height:45px;
+  border-radius:10px;
+  margin-top:12px !important;
+}
+.postedLabel{
+  padding: 0px 5px;
+  background:#28A745;
+  color:#C7E8CE;
+  border-radius:5px
+}
+.unPostedLabel{
+  padding: 0px 5px;
+  background:#FFC107;
+  color:#575135;
+  border-radius:5px
+
+}
+.footer{
+  height:60px;
+  background-color: #6C757D !important;
+  display:flex;
+  align-items:center;
+  padding:15px;
+  color:#C7E8CE;
+}
+.selectPage{
+  width:110px;
+  padding:10px;
+}
+.pageNumber{
+  padding-top:13px;
+  font-size:12px
+}
+.gridFooter{
+  margin-top:25px !important;
+  margin-bottom:80px !important;
+}
