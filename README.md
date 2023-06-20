@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 4labs_prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+4labs_prototype is a prototype project created for 4Labs Technologies as a submission to evaluate my coding skills.
 
-## Available Scripts
+## Author
 
-In the project directory, you can run:
+- Name: Rahul Krishna
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4labs_prototype is a prototype developed to demonstrate my coding skills and showcase my abilities in web development. The purpose of this project is to fulfill the evaluation requirements set by 4Labs Technologies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- React: A popular JavaScript library for building user interfaces.
+- npm: A package manager for installing and managing project dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To get started with this project, follow the steps below:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository:
+   
+   `git clone https://github.com/rahulkrishna8590/4labs_prototype.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   `cd 4labs_prototype`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install all the required packages
+   `npm install `
 
-### `npm run eject`
+## To run the project, execute the following command in the project directory:
+  ` npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This will start the development server and you can access the project in your web browser at http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# The project is created with create-react-app #
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## dummyData.js 
+=> contains dummy data. An array of objects which is used to display in the data grid.
 
-## Learn More
+## components.jsx
+=> contains all the components like appbar, datagrid, footer etc. which are imported in the app.js. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## components.css
+=> contains all the classes for styling which is used in component.jsx.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## mui
+=> used mui icons, and components.

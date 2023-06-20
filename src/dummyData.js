@@ -1,3 +1,5 @@
+//Contains an array of dummy data.
+
 export const listData = [
     {
       "_id": "64917e2dbafd5fa6d0786922",

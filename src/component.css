@@ -43,6 +43,7 @@ text-align: left;
 .searchInput {
   min-width: 300px !important;
   width: 15vw;
+  cursor: pointer;
 }
 .filterButton {
   background-color: #6C757D !important;
@@ -90,6 +91,7 @@ text-align: left;
 }
 .headerLabelText{
     margin-top:9px !important;
+    cursor: pointer;
 }
 .listDatas{
   background:white;
@@ -129,4 +131,7 @@ text-align: left;
 .gridFooter{
   margin-top:25px !important;
   margin-bottom:80px !important;
+}
+.notifIcons{
+  cursor: pointer;
 }

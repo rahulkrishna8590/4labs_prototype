@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+// Importing css
 import "./component.css";
+
+// @mui imports
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -21,25 +25,18 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Input from "@mui/material/Input";
 import ClearIcon from "@mui/icons-material/Clear";
 import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import SegmentIcon from "@mui/icons-material/Segment";
 import Checkbox from "@mui/material/Checkbox";
-import { listData } from "./dummyData";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import AutoAwesomeMosaicOutlinedIcon from '@mui/icons-material/AutoAwesomeMosaicOutlined';
+
+// importing dummyData
+import { listData } from "./dummyData";
 
 // AppBar Component
 export function AppBarComponent() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -107,6 +104,7 @@ export function AppBarComponent() {
   );
 }
 
+// Toolbar component
 export function ToolBarComponent() {
   return (
     <Grid container item xs={12} className="toolbarContainer">
@@ -164,6 +162,7 @@ export function ToolBarComponent() {
   );
 }
 
+// Search input => used in toolbar component
 function SearchInput() {
   return (
     <FormControl variant="outlined" className="searchInput">
@@ -180,6 +179,8 @@ function SearchInput() {
     </FormControl>
   );
 }
+
+// Custom data grid
 export function ListDataGrid() {
   const label = { inputProps: { "aria-label": "select" } };
   const [selectedOption, setSelectedOption] = useState("");
@@ -215,9 +216,13 @@ export function ListDataGrid() {
         <Grid item xs={0.7} className="headerLabelText">
           Total
         </Grid>
+        <Grid item xs={0.7} className="headerLabelText">
+          <AutoAwesomeMosaicOutlinedIcon />
+        </Grid>
+
       </Grid>
 
-      {listData &&
+      {listData ?
         listData.map((one) => {
           return (
             <Grid container item xs={10} className="listDatas">
@@ -251,9 +256,13 @@ export function ListDataGrid() {
               <Grid item xs={0.7} className="headerLabelText">
                 {one.total}
               </Grid>
+              <Grid item xs={0.7} className="headerLabelText">
+                ...
+              </Grid>
             </Grid>
           );
-        })}
+        }) : <Grid container item xs={12}>No Data Found!</Grid>
+      }
       <Grid container item xs={10} className="gridFooter">
         <Grid item xs={3}>
           <div className="selectPage">
@@ -274,7 +283,7 @@ export function ListDataGrid() {
           <IconButton aria-label="delete">
             <ArrowBackIosIcon />
           </IconButton>
-         <span className="pageNumber"> 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; ... &nbsp; &nbsp; 24 &nbsp; &nbsp; 25</span>
+          <span className="pageNumber"> 1 &nbsp; &nbsp; 2 &nbsp; &nbsp; ... &nbsp; &nbsp; 24 &nbsp; &nbsp; 25</span>
           <IconButton aria-label="delete">
             <ArrowForwardIosIcon />
           </IconButton>
